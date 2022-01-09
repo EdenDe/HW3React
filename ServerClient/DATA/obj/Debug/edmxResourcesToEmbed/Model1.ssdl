@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bgroup86Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Ingredients">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="image" Type="text" Nullable="false" />
+    <Property Name="calories" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IngredientsInRecipes">
+    <Key>
+      <PropertyRef Name="recipeId" />
+      <PropertyRef Name="ingredientId" />
+    </Key>
+    <Property Name="recipeId" Type="int" Nullable="false" />
+    <Property Name="ingredientId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Recipes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="image" Type="text" Nullable="false" />
+    <Property Name="CookingMethod" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="time" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Ingredien__ingre__2F10007B">
+    <End Role="Ingredients" Type="Self.Ingredients" Multiplicity="1" />
+    <End Role="IngredientsInRecipes" Type="Self.IngredientsInRecipes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ingredients">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="IngredientsInRecipes">
+        <PropertyRef Name="ingredientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ingredien__recip__2E1BDC42">
+    <End Role="Recipes" Type="Self.Recipes" Multiplicity="1" />
+    <End Role="IngredientsInRecipes" Type="Self.IngredientsInRecipes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recipes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="IngredientsInRecipes">
+        <PropertyRef Name="recipeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bgroup86ModelStoreContainer">
+    <EntitySet Name="Ingredients" EntityType="Self.Ingredients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IngredientsInRecipes" EntityType="Self.IngredientsInRecipes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Recipes" EntityType="Self.Recipes" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Ingredien__ingre__2F10007B" Association="Self.FK__Ingredien__ingre__2F10007B">
+      <End Role="Ingredients" EntitySet="Ingredients" />
+      <End Role="IngredientsInRecipes" EntitySet="IngredientsInRecipes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ingredien__recip__2E1BDC42" Association="Self.FK__Ingredien__recip__2E1BDC42">
+      <End Role="Recipes" EntitySet="Recipes" />
+      <End Role="IngredientsInRecipes" EntitySet="IngredientsInRecipes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

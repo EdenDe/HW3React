@@ -1,0 +1,12 @@
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\DATA.dll.config
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\DATA.dll
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\DATA.pdb
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\EntityFramework.dll
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\EntityFramework.xml
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\obj\Debug\DATA.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\obj\Debug\DATA.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\obj\Debug\DATA.csproj.CopyComplete
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\obj\Debug\DATA.dll
+C:\Users\משתמש\Desktop\react\GitHubProjTeam\HW3\HW3\DATA\obj\Debug\DATA.pdb

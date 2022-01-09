@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Group86MyKitchenModelStoreContainer" CdmEntityContainer="Group86MyKitchenDbContext">
+    <EntitySetMapping Name="Ingredients">
+      <EntityTypeMapping TypeName="Group86MyKitchenModel.Ingredient">
+        <MappingFragment StoreEntitySet="Ingredients">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="calories" ColumnName="calories" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IngredientsInRecipes">
+      <EntityTypeMapping TypeName="Group86MyKitchenModel.IngredientsInRecipe">
+        <MappingFragment StoreEntitySet="IngredientsInRecipes">
+          <ScalarProperty Name="recipeId" ColumnName="recipeId" />
+          <ScalarProperty Name="ingredientId" ColumnName="ingredientId" />
+          <ScalarProperty Name="dummy" ColumnName="dummy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recipes">
+      <EntityTypeMapping TypeName="Group86MyKitchenModel.Recipe">
+        <MappingFragment StoreEntitySet="Recipes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="CookingMethod" ColumnName="CookingMethod" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
