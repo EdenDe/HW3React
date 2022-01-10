@@ -21,7 +21,7 @@ function Ingredient({ id, name, img, calories,papa,ChangeCheck }) {
         margin:5,
        width:"15%",
        minWidth: 180,
-       height: "30ch",
+       height: "25ch",
       }}>
     
         <CardMedia

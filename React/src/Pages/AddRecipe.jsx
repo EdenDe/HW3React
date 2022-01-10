@@ -17,8 +17,8 @@ const AddRecipe = ({ listIng, counter,renderRec }) => {
 
   let navigate = useNavigate();
 
-  const apiUrl = 'https://localhost:44312/api/recipes';
-
+  const apiUrl = 'http://proj.ruppin.ac.il/bgroup86/test2/tar2/api/Recipes';
+ 
   const ChangeName = (e) => {
     SetNameS(e.target.value)
   }
@@ -114,8 +114,8 @@ const AddRecipe = ({ listIng, counter,renderRec }) => {
         <Input style={{ marginBottom: 10 }} type="text" onChange={ChangeTime} /> <br />
 
         <p style={{fontWeight:"bold",fontSize:30}}> Choose Ingredients: </p>
-        <Box display='flex' flexDirection='row' width='100%'
-          justifyContent='space-evenly' alignItems='center' flexWrap='wrap' style={{marginBottom:30}}>
+        <Box display='flex' flexDirection='row' 
+          justifyContent='space-evenly' alignItems='center' flexWrap='wrap' style={{margin:"auto",width:"100%", maxWidth:"120ch"}}>
 
           {
             listIng.map((ing) => {
@@ -128,7 +128,7 @@ const AddRecipe = ({ listIng, counter,renderRec }) => {
 
         </Box>
 
-        <Button style={{ backgroundColor: "#B076B4", margin: 20, fontWeight: "bold", width:"26%", fontSize:30 }} variant="contained" onClick={AddRecToList}> Add Recipe </Button>
+        <Button style={{ backgroundColor: "#B076B4", margin: 20, fontWeight: "bold", width:"26%",minWidth:"20ch" ,fontSize:28 }} variant="contained" onClick={AddRecToList}> Add Recipe </Button>
 
       </FormGroup>
 

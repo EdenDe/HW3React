@@ -36,7 +36,7 @@ function App() {
   const renderIngredients=()=>{
 
     let temp = [];
-    const apiUrl = 'https://localhost:44312/api/Ingredients';
+    const apiUrl = 'http://proj.ruppin.ac.il/bgroup86/test2/tar2/api/ingredients';
 
     fetch(apiUrl, {
       method: 'GET',
@@ -80,7 +80,7 @@ function App() {
   const RenderRecipes=()=>{
     let temp = [];
 
-    const apiUrl = 'https://localhost:44312/api/Recipes';
+    const apiUrl = 'http://proj.ruppin.ac.il/bgroup86/test2/tar2/api/Recipes';
 
     fetch(apiUrl, {
       method: 'GET',
@@ -146,7 +146,7 @@ function App() {
          {RecHeader} 
          
         <Box display='flex' flexDirection='row'  justifyContent='space-around'
-          alignItems='center' flexWrap='wrap'  width='100%' style={{marginBottom:20}} >
+          alignItems='center' flexWrap='wrap'   style={{margin:"auto",width:"100%", maxWidth:"170ch"}} >
           
           {
             listRec.map((rec) => {

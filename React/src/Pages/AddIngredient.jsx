@@ -12,7 +12,7 @@ const AddIngredient = ({counter,renderIng}) => {
   const [imageS, SetImageS] = useState("");
   const [caloriesS, SetCaloriesS] = useState("");
 
-  const apiUrl = 'https://localhost:44312/api/Ingredients';
+  const apiUrl = 'http://proj.ruppin.ac.il/bgroup86/test2/tar2/api/ingredients';
 
   const ChangeName = (e) => {
     SetNameS(e.target.value)
@@ -73,7 +73,7 @@ const AddIngredient = ({counter,renderIng}) => {
         Ingredient Calories:  <br />
         <Input style={{ marginBottom: 10 }}value={caloriesS}  type="text" onChange={ChangeCalories} /> <br />
 
-        <Button style={{ backgroundColor: "#B076B4", margin: 20,fontWeight:"bold",width:"20%",fontSize:18 }} onClick={AddIngredient}> Add Ingredient </Button>
+        <Button style={{ backgroundColor: "#B076B4", margin: 20,fontWeight:"bold",width:"20%",minWidth:"20ch",fontSize:18 }} onClick={AddIngredient}> Add Ingredient </Button>
       </FormGroup>
     </div>
   )
