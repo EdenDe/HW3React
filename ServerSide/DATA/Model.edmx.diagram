@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="59b8fe6025054379bb03e8f5bf897605" Name="Diagram1">
-        <EntityTypeShape EntityType="Group86MyKitchenModel.Ingredient" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Group86MyKitchenModel.IngredientsInRecipe" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Group86MyKitchenModel.Recipe" Width="1.5" PointX="5.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group86MyKitchenModel.Ingredient" Width="1.5" PointX="3" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group86MyKitchenModel.IngredientsInRecipe" Width="1.5" PointX="5.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Group86MyKitchenModel.Recipe" Width="1.5" PointX="7.375" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="Group86MyKitchenModel.FK__Ingredien__ingre__2D27B809" ManuallyRouted="false" />
         <AssociationConnector Association="Group86MyKitchenModel.FK__Ingredien__recip__2C3393D0" ManuallyRouted="false" />
       </Diagram>

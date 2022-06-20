@@ -75,8 +75,7 @@ namespace WebApplication.Controllers
             try
             {
                 Group86MyKitchenDbContext db = new Group86MyKitchenDbContext();
-
-             
+    
                 Recipe r = new Recipe
                 {
                     id = rec.id,
